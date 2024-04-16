@@ -5,7 +5,7 @@ function solution(age) {
     const ageArr = age.toString().split('');
     
     for (let i=0; i<ageArr.length; i++) {
-        answer += stringSet[ageArr[i]]
+        answer += stringSet[Number(ageArr[i])]
     } 
     
     return answer;
