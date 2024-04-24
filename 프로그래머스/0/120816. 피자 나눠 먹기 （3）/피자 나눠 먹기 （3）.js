@@ -1,3 +1,3 @@
 function solution(slice, n) {
-    return Math.ceil(n / slice);
+    return Math.ceil(n / slice)
 }
