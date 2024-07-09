@@ -6,8 +6,11 @@ function solution(code) {
         if (!isNaN(cur) && cur === '1') {   // code[idx]가 1일 때 mode 변경 
             acc.mode === 0 ? acc.mode = 1 : acc.mode = 0;
         } else {    // 나머지 경우 (code[idx]가 0이거나 문자일 때)
-            if ((acc.mode === 0 && i % 2 === 0) || (acc.mode === 1 && i % 2 !== 0)) 
-                acc.ret += cur;
+            if (acc.mode === 0) {
+                if (i % 2 === 0) acc.ret += cur;
+            } else {
+                if (i % 2 !== 0) acc.ret += cur;
+            }
         }
         return acc;
     }, { mode, ret })
