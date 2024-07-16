@@ -9,18 +9,18 @@ const isParallel = (dot) => {
 }
 
 function solution(dots) {
-    // x좌표를 기준으로 배열을 정렬하기 
-    let x = dots.sort((a, b) => {
-        a = a[0];
-        b = b[0];
-        return a - b;
-    })
-    // y좌표를 기준으로 배열을 정렬하기 
-    let y = dots.sort((a, b) => {
-        a = a[1];
-        b = b[1];
-        return a - b;
-    })
+    // // x좌표를 기준으로 배열을 정렬하기 
+    // let x = dots.sort((a, b) => {
+    //     a = a[0];
+    //     b = b[0];
+    //     return a - b;
+    // });
+    // // y좌표를 기준으로 배열을 정렬하기 
+    // let y = dots.sort((a, b) => {
+    //     a = a[1];
+    //     b = b[1];
+    //     return a - b;
+    // });
 
-    return isParallel(x) ? 1 : isParallel(y) ? 1 : 0;
+    return isParallel(dots) ? 1 : 0;
 }
