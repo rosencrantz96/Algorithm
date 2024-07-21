@@ -14,9 +14,12 @@ function solution(score) {
     // 평균 점수를 내림차순 정렬
     scoreArr.sort((a, b) => b-a);
     // 일치하는 인덱스 번호 + 1로 rank값 갱신
-    result.map((v, i) => {
-        return v.rank = scoreArr.findIndex((e) => e === v.avg) + 1;
-    })
+    // result.map((v, i) => {
+    //     return v.rank = scoreArr.findIndex((e) => e === v.avg) + 1;
+    // });
+    result.forEach((v, i) => {
+        v.rank = scoreArr.findIndex((e) => e === v.avg) + 1;
+    });
     
-    return result.map((v) => v.rank);
+    return result.map((v) => v = v.rank);
 }
