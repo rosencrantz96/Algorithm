@@ -28,5 +28,6 @@ function solution(polynomial) {
         if (result) result += ' + ';
         result += numhang
     }
+    
     return result;
 }
