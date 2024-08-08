@@ -20,7 +20,6 @@ function solution(a, b) {
 
     // 2. 분모를 최대공약수로 나누기 
     let giyak = b / gcd;
-    // console.log(giyak)
     
     // 3. 약분한 분모를 소인수분해하기 
     let isPrime = getPrimes(giyak);
