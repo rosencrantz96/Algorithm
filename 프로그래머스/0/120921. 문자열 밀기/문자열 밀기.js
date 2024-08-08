@@ -4,6 +4,7 @@ const rightPush = (count, origin, compare) => {
     //  - 마지막 글자를 맨 앞으로 붙여 새로운 배열을 만들고 count를 증가시킨다.
     //  - 만약 count가 origin을 초과하였다면 -1을 반환한다. 
     //  - recombination을 문자열로 합쳐서 compare과 비교해서 같다면 count를 반환하고 그렇지 않다면 다시 함수를 호출한다 (재귀!!! )
+    
     let newOrigin = origin.slice();
     
     let last = newOrigin.pop();
