@@ -22,5 +22,6 @@ rl.on('line', function (line) {
             result.push(i.toUpperCase());
         }
     }
+    
     console.log(result.join(''));
 });
