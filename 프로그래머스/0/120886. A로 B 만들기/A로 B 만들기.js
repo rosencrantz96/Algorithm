@@ -1,6 +1,6 @@
 function solution(before, after) {
-    let a = [...before].sort().join('');
-    let b = [...after].sort().join('');
+    let b = [...before].sort().join('');
+    let a = [...after].sort().join('');
     
-    return a === b ? 1 : 0;
+    return b === a ? 1 : 0;
 }
