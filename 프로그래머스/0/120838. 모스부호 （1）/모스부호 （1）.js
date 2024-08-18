@@ -1,18 +1,10 @@
 function solution(letter) {
-    const morse = { 
+    morse = { 
         '.-':'a','-...':'b','-.-.':'c','-..':'d','.':'e','..-.':'f',
         '--.':'g','....':'h','..':'i','.---':'j','-.-':'k','.-..':'l',
         '--':'m','-.':'n','---':'o','.--.':'p','--.-':'q','.-.':'r',
         '...':'s','-':'t','..-':'u','...-':'v','.--':'w','-..-':'x',
         '-.--':'y','--..':'z'
-    };
-    
-    let code = letter.split(' ');
-    let decode = [];
-    
-    for (let i=0; i<code.length; i++) {
-        decode.push(morse[code[i]]);
     }
-    
-    return decode.join('');
+    return letter.split(' ').map((v) => morse[v]).join('');    
 }
